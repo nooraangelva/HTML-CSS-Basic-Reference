@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    input {
+      border: 3px rgb(3, 3, 3);
+      background-color: rgb(248, 226, 197);
+      margin: 1px;
+      padding: 2px;
+      width: 10%;
+    }
+    textarea {
+      background-color: rgb(248, 226, 197);
+    }
+    select {
+      background-color: rgb(248, 226, 197);
+    }
+    textarea:focus {
+      background-color: rgb(233, 202, 156);
+    }
+    input[type="text"]:focus {
+      background-color: rgb(233, 202, 156);
+    }
+    input[type="submit"]:hover {
+      background-color: rgb(202, 100, 65);
+    }
+    input[type="reset"]:hover {
+      background-color: rgb(15, 131, 133);
+    }
+    .button1 {
+      border-radius: 40px;
+      border: 3px rgb(127, 209, 219);
+      background-color: rgb(127, 209, 219);
+    }
+    .button2 {
+      border-radius: 40px;
+      border: 3px rgb(224, 136, 149);
+      background-color: rgb(224, 136, 149);
+    }
+  </style>
+  <body>
+    <div style="background-color: rgb(241, 205, 176)">
+      <form action="/action_page.php">
+        Etunimi:<br />
+        <input type="text" name="firstname" value="" />
+        <br />
+        Sukunimi:<br />
+        <input type="text" name="lastname" value="" />
+        <br />
+        sposti:<br />
+        <input type="text" name="sposti" value="" />
+        <br />
+        <p>Koulutusohjelma:</p>
+        <select name="Koulutusohjelma" size="1">
+          <option value="Tietotekniikka">Tietotekniikka</option>
+          <option value="Maanmittaus">Maanmittaus</option>
+          <option value="Rakennustekniikka">Rakennustekniikka</option>
+        </select>
+        <br /><br />
+        <input type="radio" name="sukupuoli" value="mies" checked /> mies<br />
+        <input type="radio" name="sukupuoli" value="nainen" /> nainen<br />
+        <input type="radio" name="sukupuoli" value="muu" /> muu<br />
+        Paivamaara:<br />
+        <input type="text" name="Paivamaara" value="mm/dd/yyyy" />
+        <br />
+        <p>Osallistun seuraaville opintojaksoille:</p>
+        <input type="checkbox" name="valinta1" value="Ohjelmointi" />
+        Ohjelmoinnin perusteet<br />
+        <input type="checkbox" name="valinta2" value="Web" /> Web-kehitys<br />
+        <input type="checkbox" name="valinta3" value="projekti" />projekti<br />
+        <br />
+        <p>Muuta tarkeaa tietoa:</p>
+        <textarea name="Muu tieto" rows="10" cols="30"> </textarea>
+        <br />
+        <input type="submit" class="button2" value="submit" />
+        <input type="reset" class="button1" />
+      </form>
+    </div>
+  </body>
+</html>

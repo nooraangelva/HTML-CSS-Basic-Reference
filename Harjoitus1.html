@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #myHeader {
+        color: teal;
+      }
+
+      span.note {
+        color: white;
+      }
+
+      body {
+        background-image: url("Material/img_1250.jpg");
+        background-size: cover;
+      }
+
+      /* For width 400px and larger: */
+      @media only screen and (min-width: 400px) {
+        body {
+          background-image: url("Material/img_1242.jpg");
+          background-size: cover;
+        }
+      }
+      header {
+        background-color: #666;
+        padding: 90px;
+        text-align: center;
+        font-size: 35px;
+        color: black;
+      }
+
+      nav {
+        float: left;
+        width: 33%;
+        background: #ccc;
+        padding: 90px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 95px;
+        width: 33%;
+        background-color: wheat;
+      }
+      .aside {
+        float: left;
+        padding: 90px;
+        width: 33%;
+        text-align: left;
+        color: blueviolet;
+      }
+      @media (max-width: 600px) {
+        nav,
+        article,
+        .aside {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2><span class="note">L</span>ajit</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">Perhos uinti</a></li>
+          <li><a href="#">selkauuinti</a></li>
+          <li><a href="#">Rintauinti</a></li>
+          <li><a href="#">Vapaauinti</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1 title="harrastus">uinti</h1>
+        <p id="myHeader">Kuvio kelluntaa parhaimmillaan.</p>
+      </article>
+
+      <div class="aside">
+        <img
+          src="Material/IMG_1206.JPG"
+          alt="random kuva ystavasta"
+          style="max-width: 120%; height: auto"
+        />
+      </div>
+    </section>
+  </body>
+</html>
